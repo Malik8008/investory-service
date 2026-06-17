@@ -51,6 +51,7 @@ public class ProductServiceImpl implements ProductService {
         Product product = new Product();
         product.setName(postProductDto.name());
         product.setQuantity(postProductDto.quantity());
+        product.setIsDeleted(false);
         Product newProduct = productRepository.save(product);
         return modelMapper.map(newProduct, GetProductDto.class);
     }

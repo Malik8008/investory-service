@@ -1,7 +1,10 @@
 package az.msinventory.dto;
 
-public record GetProductDto(
-        Long id,
-        String name,
-        Integer quantity) {
+import lombok.Data;
+
+@Data
+public class GetProductDto {
+    Long id;
+    String name;
+    Integer quantity;
 }
