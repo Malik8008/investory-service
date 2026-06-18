@@ -1,3 +1,3 @@
-INSERT INTO product (name, quantity) VALUES ('Laptop', 10);
-INSERT INTO product (name, quantity) VALUES ('Mouse', 25);
-INSERT INTO product (name, quantity) VALUES ('Keyboard', 15);
+INSERT INTO product (name, quantity, is_deleted) VALUES ('Laptop', 10,FALSE);
+INSERT INTO product (name, quantity, is_deleted) VALUES ('Mouse', 25,FALSE);
+INSERT INTO product (name, quantity, is_deleted) VALUES ('Keyboard', 15,FALSE);
